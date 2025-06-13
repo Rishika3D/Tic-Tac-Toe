@@ -1,0 +1,86 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    text-align: center;
+    background-color: #283149;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px; /* Add padding to prevent sticking at the bottom */
+}
+
+/* Container that holds the game */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game board */
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* space between boxes */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Each box (button) on the board */
+.box {
+    height: 18vmin;
+    width: 18vmin;  
+    border-radius: 5px;
+    border: none;
+    font-size: 5vmin;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #404b69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.box:hover {
+    background-color: #6c7b95;
+}
+
+/* Title */
+h1 {
+    margin: 3rem;
+    font-size: 70px;
+}
+
+/* Result Message */
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Reset button */
+.reset {
+    margin-top: 20px;
+    margin-bottom: 50px; /* 👈 This prevents sticking to the bottom */
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f73859;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset:hover {
+    background-color: #d6304b;
+}
